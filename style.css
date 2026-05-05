@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    margin: 0;
+    background-color: rgb(186, 147, 223);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+div {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    padding: 40px;
+    border: 1px solid black;
+    width: 20px;
+}
