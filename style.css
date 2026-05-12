@@ -2,20 +2,33 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(59, 96, 104);
 }
-h1{
-    margin: 0;
-    background-color: rgb(186, 147, 223);
+section {
+    width: 20%;
+    align-items: center;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: aliceblue;
+    transform: translate(45rem, 15rem);
+    background-color: aliceblue;
+    height: 15rem;
+    border: 1px solid rgb(115, 227, 216);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px cornflowerblue;
 }
-div {
-    align-self: center;
-    display: flex;
-    justify-content: center;
-    margin-top: 20%;
-    padding: 40px;
-    border: 1px solid black;
-    width: 20px;
+.inside{
+    transform: translate(10px, 40px);
+}
+button.btn {
+    background-color: rgb(59, 96, 104);
+    color: white;
+    border: 1px solid #05054d;
+    border-radius: 5px;
+    width: 20%;
+    padding: 10px;
+    transition: all 0.4s ease-in;
+}
+button.btn:hover{
+    padding: 15px;
+    width: 23%;
+    box-shadow: 5px 5px 10px cornflowerblue;
 }
