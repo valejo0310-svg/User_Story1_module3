@@ -14,8 +14,9 @@ btn.addEventListener ("click", () => { //arrow function to add an event to the b
     age = prompt ("Please enter your age");
    }
    //Conditionals using ternary operators to prevent from using so many code lines.
-   let confirm = (age >= 18) ? alert ("You're an adult, you can keep going") : alert ("You're underage, please wait a little.")
+   let confirm = (age >= 18) ? "You're an adult, you can keep going": "You're underage, please wait a little."
    
-
+   let write = document.getElementById("result")
+   write.innerHTML = ` Hello ${name}, ${confirm}`
 });
 
