@@ -1,9 +1,11 @@
+/*Body configurations to allow it to be fully seen on the screen*/
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(59, 96, 104);
 }
+/*Configuration for the section container*/
 section {
     width: 20%;
     align-items: center;
@@ -15,9 +17,11 @@ section {
     border-radius: 20px;
     box-shadow: 5px 5px 10px cornflowerblue;
 }
+/*Inside container configurations to help with the position*/
 .inside{
     transform: translate(10px, 40px);
 }
+/*Buton configurations, including a hover for aesthetic purposes*/
 button.btn {
     background-color: rgb(59, 96, 104);
     color: white;
