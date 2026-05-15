@@ -1,25 +1,38 @@
-/*Body configurations to allow it to be fully seen on the screen*/
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+/*Body configurations to allow it to be fully seen on the screen*/
+body{
     background-color: rgb(59, 96, 104);
+    min-height: 100vh;
+    /* Flex to center everything */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    
 }
 /*Configuration for the section container*/
 section {
-    width: 20%;
-    align-items: center;
-    text-align: center;
-    transform: translate(45rem, 15rem);
+    width: 100%;
+    max-width: 400px;
     background-color: aliceblue;
-    height: 15rem;
+    text-align: center;
+    padding: 40px 20px;
     border: 1px solid rgb(115, 227, 216);
     border-radius: 20px;
     box-shadow: 5px 5px 10px cornflowerblue;
+    
 }
 /*Inside container configurations to help with the position*/
 .inside{
-    transform: translate(10px, 40px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
 }
 /*Buton configurations, including a hover for aesthetic purposes*/
 button.btn {
@@ -29,10 +42,30 @@ button.btn {
     border-radius: 5px;
     width: 20%;
     padding: 10px;
+    margin-top: 40px;
     transition: all 0.4s ease-in;
 }
 button.btn:hover{
     padding: 15px;
     width: 23%;
     box-shadow: 5px 5px 10px cornflowerblue;
+}
+/* Responsive for mobile */
+@media (max-width: 480px){
+
+    section{
+        padding: 30px 15px;
+    }
+
+    .inside h1{
+        font-size: 1.5rem;
+    }
+
+    .inside p{
+        font-size: 0.9rem;
+    }
+
+    button.btn{
+        width: 100%;
+    }
 }
